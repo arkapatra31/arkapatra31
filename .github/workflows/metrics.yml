@@ -11,16 +11,16 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  build:
     name: 🧠 Build profile SVGs
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # ───── 1. Render metrics.svg → commit directly to `output` branch ─────
       - name: ⚡ Render metrics dashboard
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
-          output_action: none    # ❗ don't commit to main — we publish later
           token: ${{ secrets.METRICS_TOKEN || github.token }}
           user: arkapatra31
           template: classic
@@ -28,6 +28,8 @@ jobs:
           config_timezone: Asia/Kolkata
           config_display: regular
           config_animations: yes
+          committer_branch: output
+          committer_message: "chore(metrics): refresh dashboard ♻️"
 
           # 🧮  3D isometric contribution calendar
           plugin_isocalendar: yes
@@ -58,21 +60,31 @@ jobs:
           plugin_followup: yes
           plugin_followup_sections: repositories
 
-      - name: 📦 Stage metrics.svg into dist/
-        run: mkdir -p dist && mv metrics.svg dist/metrics.svg
+      # ───── 2. Check out `output` branch (now contains fresh metrics.svg) ─────
+      - name: 📥 Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+          path: output-branch
 
+      # ───── 3. Render contribution-wave.svg into the output worktree ─────
       - name: 🌊 Render contribution wave
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: arkapatra31
           outputs: |
-            dist/contribution-wave.svg?palette=github-dark&color_snake=%23FFD43B
+            output-branch/contribution-wave.svg?palette=github-dark&color_snake=%23FFD43B
 
-      - name: 🚀 Publish both SVGs to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-          commit_message: "chore(assets): refresh profile SVGs ♻️"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # ───── 4. Commit & push the wave onto `output` branch ─────
+      - name: 🚀 Commit contribution wave
+        working-directory: output-branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add contribution-wave.svg
+          if git diff --quiet --cached; then
+            echo "No changes in contribution-wave.svg — skipping commit."
+          else
+            git commit -m "chore(wave): refresh contribution wave 🐍"
+            git push
+          fi
