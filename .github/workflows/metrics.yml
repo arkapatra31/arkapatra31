@@ -11,15 +11,16 @@ permissions:
   contents: write
 
 jobs:
-  github-metrics:
-    name: 🧠 Build metrics.svg
+  generate:
+    name: 🧠 Build profile SVGs
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: ⚡ Render dashboard
+      - name: ⚡ Render metrics dashboard
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
+          output_action: none    # ❗ don't commit to main — we publish later
           token: ${{ secrets.METRICS_TOKEN || github.token }}
           user: arkapatra31
           template: classic
@@ -27,8 +28,6 @@ jobs:
           config_timezone: Asia/Kolkata
           config_display: regular
           config_animations: yes
-          committer_branch: main
-          committer_message: "chore(metrics): refresh dashboard ♻️"
 
           # 🧮  3D isometric contribution calendar
           plugin_isocalendar: yes
@@ -41,12 +40,6 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_limit: 8
           plugin_languages_analysis_timeout: 15
-
-          # 🏆  GitHub achievements rendered inline
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_threshold: C
-          plugin_achievements_limit: 0
 
           # 📌  Repo topics (icons mode)
           plugin_topics: yes
@@ -65,23 +58,21 @@ jobs:
           plugin_followup: yes
           plugin_followup_sections: repositories
 
-  # 🎨 Secondary: animated contribution visualizer (pacman-style wave)
-  contribution-art:
-    name: 🌊 Contribution wave art
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: 🎨 Generate contribution wave SVG
+      - name: 📦 Stage metrics.svg into dist/
+        run: mkdir -p dist && mv metrics.svg dist/metrics.svg
+
+      - name: 🌊 Render contribution wave
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: arkapatra31
           outputs: |
-            dist/contribution-wave.svg?palette=github-dark&color_snake=FFD43B&color_dots=0e4429,006d32,26a641,39d353,FFD43B
+            dist/contribution-wave.svg?palette=github-dark&color_snake=%23FFD43B
 
-      - name: 🚀 Commit SVG to output branch
+      - name: 🚀 Publish both SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "chore(assets): refresh profile SVGs ♻️"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

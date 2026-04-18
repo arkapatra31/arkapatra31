@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24,30&height=260&section=header&text=Arka%20Patra&fontSize=70&fontColor=ffffff&fontAlignY=38&desc=%7B%20Python%20%F0%9F%90%8D%20%E2%80%A2%20GenAI%20Engineer%20%E2%80%A2%20LLM%20Whisperer%20%7D&descSize=18&descAlignY=58&animation=twinkling" alt="header banner" />
 
 <a href="https://github.com/arkapatra31">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3500&pause=800&color=FFD43B&center=true&vCenter=true&multiline=true&width=820&height=130&lines=%3E%3E%3E+import+arkapatra+as+ark;%3E%3E%3E+ark.role+%3D+%22Python+%2B+GenAI+Engineer%22;%3E%3E%3E+ark.build(%22agents%22%2C+%22RAG%22%2C+%22LLMs%22)+%F0%9F%A7%A0;%3E%3E%3E+print(%22Welcome+to+my+neural+net%2C+hacker.%22)+%F0%9F%91%BE" alt="typing banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3500&pause=800&color=FFD43B&center=true&vCenter=true&multiline=true&width=820&height=130&lines=%3E%3E%3E+import+arkapatra+as+arka;%3E%3E%3E+arka.role+%3D+%22Python+%2B+GenAI+Engineer%22;%3E%3E%3E+arka.build(%22agents%22%2C+%22RAG%22%2C+%22LLMs%22)+%F0%9F%A7%A0;%3E%3E%3E+print(%22Welcome+to+my+neural+net%2C+hacker.%22)+%F0%9F%91%BE" alt="typing banner" />
 </a>
 
 <br/>
@@ -22,7 +22,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1500&color=FFD43B&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=260&lines=%F0%9F%90%8D+Python+Engineer+%C3%97+GenAI+Builder;%F0%9F%A4%96+Architecting+agentic+AI+workflows+%26+RAG+pipelines;%F0%9F%A7%A0+Obsessed+with+LLMs%2C+prompts%2C+embeddings%2C+vector+search+%26+all+things+Generative+AI;%E2%9A%A1+Philosophy%3A+Prompt+it.+Chain+it.+Ship+intelligence.;%E2%98%95+I+talk+to+LLMs+more+than+humans+%E2%80%94+and+they+listen+better." alt="whoami summary" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1500&color=FFD43B&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=260&lines=%F0%9F%90%8D+Python+Engineer+%C3%97+GenAI+Builder;%F0%9F%A4%96+Architecting+agentic+AI+workflows+%26+RAG+pipelines;%F0%9F%A7%A0+Designing+and+developing+useful+GenAI+applications;%E2%9A%A1+Philosophy%3A+Prompt+it.+Chain+it.+Ship+intelligence.;%E2%98%95+I+talk+to+LLMs+more+than+humans+%E2%80%94+and+they+listen+better." alt="whoami summary" />
 
 </div>
 
@@ -154,7 +154,7 @@
 ## <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="30" /> `metrics --render`
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/arkapatra31/arkapatra31/main/metrics.svg" alt="profile metrics dashboard" />
+  <img src="https://raw.githubusercontent.com/arkapatra31/arkapatra31/output/metrics.svg" alt="profile metrics dashboard" />
 </div>
 
 ###
