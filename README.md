@@ -22,7 +22,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1500&color=FFD43B&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=260&lines=%F0%9F%90%8D+Python+Engineer+%C3%97+GenAI+Builder;%F0%9F%A4%96+Architecting+agentic+AI+workflows+%26+RAG+pipelines;%F0%9F%A7%A0+Obsessed+with+LLMs%2C+prompts%2C+embeddings+%26+vector+search;%F0%9F%94%AE+Fine-tuning+open+models+%E2%80%94+Llama%2C+Mistral%2C+Phi;%E2%9A%A1+Philosophy%3A+Prompt+it.+Chain+it.+Ship+intelligence.;%E2%98%95+I+talk+to+LLMs+more+than+humans+%E2%80%94+and+they+listen+better." alt="whoami summary" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1500&color=FFD43B&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=260&lines=%F0%9F%90%8D+Python+Engineer+%C3%97+GenAI+Builder;%F0%9F%A4%96+Architecting+agentic+AI+workflows+%26+RAG+pipelines;%F0%9F%A7%A0+Obsessed+with+LLMs%2C+prompts%2C+embeddings%2C+vector+search+%26+all+things+Generative+AI;%E2%9A%A1+Philosophy%3A+Prompt+it.+Chain+it.+Ship+intelligence.;%E2%98%95+I+talk+to+LLMs+more+than+humans+%E2%80%94+and+they+listen+better." alt="whoami summary" />
 
 </div>
 
@@ -151,10 +151,18 @@
 
 ###
 
-## <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="30" /> `./snake.sh --run`
+## <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="30" /> `metrics --render`
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/arkapatra31/arkapatra31/output/snake.svg" alt="snake animation" />
+  <img src="https://raw.githubusercontent.com/arkapatra31/arkapatra31/main/metrics.svg" alt="profile metrics dashboard" />
+</div>
+
+###
+
+## <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="30" /> `contribution-wave --animate`
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/arkapatra31/arkapatra31/output/contribution-wave.svg" alt="contribution wave animation" />
 </div>
 
 ###
