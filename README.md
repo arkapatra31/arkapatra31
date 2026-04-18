@@ -145,7 +145,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=4500&pause=2500&color=FFD43B&center=true&vCenter=true&multiline=false&repeat=true&width=900&height=60&lines=%E2%80%9CI%27d+rather+build+something+small+and+useful+%E2%80%94+than+something+fancy+and+forgotten.%E2%80%9D" alt="philosophy quote" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=4500&pause=2500&color=FFD43B&center=true&vCenter=true&multiline=false&repeat=true&width=900&height=50&lines=%E2%80%9CI%27d+rather+build+something+small+and+useful+%E2%80%94+than+something+fancy+and+forgotten.%E2%80%9D" alt="philosophy quote" />
 
 </div>
 
