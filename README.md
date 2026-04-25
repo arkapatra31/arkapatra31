@@ -52,6 +52,8 @@
   <img src="https://img.shields.io/badge/LlamaIndex-4B2A85?style=for-the-badge&logo=meta&logoColor=white" alt="LlamaIndex" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
   <img src="https://img.shields.io/badge/Anthropic-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Anthropic" />
+  <img src="https://img.shields.io/badge/Claude%20Code%20Agent%20SDK-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code Agent SDK" />
+  <img src="https://img.shields.io/badge/Claude%20SDK%20Client-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude SDK Client" />
   <img src="https://img.shields.io/badge/Google%20ADK-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google ADK" />
   <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama" />
 </p>
