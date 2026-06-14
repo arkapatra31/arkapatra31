@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arka Patra — Lead GenAI Engineer</title>
+  <meta name="description" content="Arka Patra, Lead GenAI Engineer. Walk the journey from understanding to ship — agentic systems, RAG and LLM evaluation." />
+  <meta property="og:title" content="Arka Patra — Lead GenAI Engineer" />
+  <meta property="og:description" content="Intelligence, engineered for production." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- the 3D landscape; the camera follows the walker as you scroll -->
+  <canvas id="world"></canvas>
+
+  <!-- nav -->
+  <header id="nav">
+    <a href="#top" data-nav="top" class="brand">
+      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h12M11 6l7 6-7 6" /><circle cx="20" cy="12" r="2.1" class="spark" /></svg>
+      ARKA&nbsp;PATRA
+    </a>
+    <nav class="nav-links">
+      <a href="#" data-nav="capabilities">Capabilities</a>
+      <a href="#" data-nav="work">Work</a>
+      <a href="#" data-nav="experience">Experience</a>
+      <a href="#" data-nav="faq">FAQ</a>
+    </nav>
+    <button class="btn solid" id="get-in-touch" type="button">Get in touch</button>
+  </header>
+
+  <!-- journey overlay -->
+  <div id="journey-ui">
+    <div id="panels"></div>
+    <nav id="dots"></nav>
+    <div class="scroll-hint"><span></span>scroll to travel</div>
+    <div class="footer-credit">© <span id="year"></span> Arka Patra · Built with Three.js</div>
+  </div>
+
+  <!-- floating "click to open" chip, positioned over a stop's platform -->
+  <button id="open-chip" aria-hidden="true"></button>
+
+  <!-- modal shown when a stop is opened -->
+  <div id="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- scroll runway (height set in JS) -->
+  <div id="journey-space" aria-hidden="true"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
